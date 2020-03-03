@@ -16,6 +16,7 @@ do ($ = jQuery, window, document) ->
     init: ->
       @$element.on "click.#{@_name}", '.simple_form_nested_fields__link', (e) =>
         e.preventDefault()
+        e.stopImmediatePropagation()
         link = e.target
         switch
           when link.classList.contains('simple_form_nested_fields__link--add') then @add_new_item(link)
