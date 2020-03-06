@@ -8,7 +8,6 @@ require 'simple_form_nested_fields/bem'
 
 require 'simple_form_nested_fields/action_view_extension'
 require 'simple_form_nested_fields/nested_fields_builder'
-require 'simple_form_nested_fields/railtie' if defined?(Rails)
 
 I18n.load_path += Dir.glob(File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml'))
 
